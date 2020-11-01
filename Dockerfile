@@ -10,5 +10,5 @@ RUN (curl -sL https://deb.nodesource.com/setup_14.x | bash) && \
   docker-php-ext-install gd pdo_mysql intl bcmath zip && \
   service apache2 restart && \
   (curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer) && \
-  composer self-update --1 && \
+  composer self-update --2 && \
   npm i -g yarn
